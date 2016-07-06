@@ -36,6 +36,7 @@ angular.module('cosmic', ['ionic', 'ngCordova', 'cosmic.controllers', 'cosmic.se
 	.state('tab', {
 		url: "/tab",
 		abstract: true,
+		controller: 'TabsCtrl',
 		templateUrl: "templates/tabs.html",
 	})
 
@@ -125,7 +126,7 @@ angular.module('cosmic', ['ionic', 'ngCordova', 'cosmic.controllers', 'cosmic.se
 		controller: 'PlayerCtrl'
 	})
 
-	.state('cosmic.search', {
+	.state('tab.search', {
 	url: "/search",
 	views: {
 		'menuContent': {
@@ -134,7 +135,7 @@ angular.module('cosmic', ['ionic', 'ngCordova', 'cosmic.controllers', 'cosmic.se
 		}
 	}
 })
-.state('cosmic.browse', {
+.state('tab.browse', {
 	url: "/browse/:tag",
 	views: {
 		'menuContent': {
@@ -143,7 +144,7 @@ angular.module('cosmic', ['ionic', 'ngCordova', 'cosmic.controllers', 'cosmic.se
 		}
 	}
 })
-.state('share', {
+.state('tab.share', {
 	url: '/share',
 	templateUrl: 'templates/share.html',
 	controller: 'shareCtrl'
