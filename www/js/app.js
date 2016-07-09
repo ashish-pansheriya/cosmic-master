@@ -36,7 +36,6 @@ angular.module('cosmic', ['ionic', 'ngCordova', 'cosmic.controllers', 'cosmic.se
 	.state('tab', {
 		url: "/tab",
 		abstract: true,
-		controller: 'TabsCtrl',
 		templateUrl: "templates/tabs.html",
 	})
 
